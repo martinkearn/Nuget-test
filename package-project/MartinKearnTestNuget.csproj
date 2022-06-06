@@ -4,13 +4,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <Authors>MartinKearn</Authors>
     <RepositoryUrl>https://github.com/martinkearn/Nuget-test</RepositoryUrl>
     <PackageProjectUrl>https://martink.me</PackageProjectUrl>
-    <PackageLicenseFile>C:\Git\Nuget-test\LICENSE</PackageLicenseFile>
     <Description>A very simple package used for learning about NuGet packages. Not usefull for anything. Please move on.</Description>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <Target Name="NugetPackAutoVersioning" AfterTargets="Build">
+    <Exec Command="dotnet pack -p:PackageVersion=$([System.DateTime]::Now.ToString(&quot;yyyy.MM.dd.HHmm&quot;)) --no-build --configuration $(Configuration) --output &quot;$(SolutionDir)nuget&quot;" />
+  </Target>
 
 </Project>
