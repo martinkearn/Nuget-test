@@ -7,11 +7,10 @@ namespace MartinKearnTestNuget.Services
         public string GenerateBookTitle()
         {
             Random rand = new();
-            int stringlen = rand.Next(4, 10);
             int randValue;
             string str = "";
             char letter;
-            for (int i = 0; i < stringlen; i++)
+            for (int i = 0; i < 10; i++)
             {
                 randValue = rand.Next(0, 26);
                 letter = Convert.ToChar(randValue + 65);
