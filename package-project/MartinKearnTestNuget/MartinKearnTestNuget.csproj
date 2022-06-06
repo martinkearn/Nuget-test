@@ -6,6 +6,9 @@
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>MartinKearn</Authors>
+    <RepositoryUrl>https://github.com/martinkearn/Nuget-test</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/martinkearn/Nuget-test</PackageProjectUrl>
+    <PackageLicenseFile>C:\Git\Nuget-test\LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
 </Project>
