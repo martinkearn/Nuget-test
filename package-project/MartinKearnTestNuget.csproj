@@ -7,8 +7,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>MartinKearn</Authors>
     <RepositoryUrl>https://github.com/martinkearn/Nuget-test</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/martinkearn/Nuget-test</PackageProjectUrl>
+    <PackageProjectUrl>https://martink.me</PackageProjectUrl>
     <PackageLicenseFile>C:\Git\Nuget-test\LICENSE</PackageLicenseFile>
+    <Description>A very simple package used for learning about NuGet packages. Not usefull for anything. Please move on.</Description>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>
